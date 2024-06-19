@@ -7,7 +7,7 @@ export default function Searchbox({updateinfo}){
     let [city,setcity]=useState("")
     let [error,seterror]=useState(false)
     let apiurl="https://api.openweathermap.org/data/2.5/weather"
-    let apikey=PROCESS.env.key
+    let apikey=`b97554de742b803653f0cc8f70cd1c54`
     let getweatherinfo=async ()=>{
         try{
             let res=await fetch(`${apiurl}?q=${city}&appid=${apikey}&units=metric`)
